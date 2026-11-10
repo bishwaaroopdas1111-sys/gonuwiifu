@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#18001f"><title>A little note for Wiifu Babu 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+:root{--bg:#100016;--panel:#26052e;--pink:#ff168d;--pink2:#ff5bb7;--text:#fff3fb;--muted:#c8a9c6}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 10%,#3b0847 0,#1a0024 38%,#0b0010 100%);color:var(--text);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}
+#stars,.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#ff8bd0;opacity:.5;box-shadow:0 0 9px #ff4ab4;animation:twinkle 3s infinite alternate}@keyframes twinkle{to{opacity:.12;transform:scale(.5)}}
+.heart{position:absolute;bottom:-35px;color:#ff4ba9;animation:floatUp linear forwards;text-shadow:0 0 12px #ff168d}@keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+main{position:relative;z-index:1;width:min(100%,480px);margin:auto;padding:0 16px 46px}
+/* Cute teddy decorations */
+.teddy-stage{height:86px;position:relative;display:flex;align-items:center;justify-content:center;gap:25px;margin:-7px auto 5px;overflow:visible}
+.teddy{display:inline-block;width:72px;height:72px;object-fit:contain;border-radius:12px;background:#fff4fb;box-shadow:0 5px 18px #ff168d30;animation:teddyBob 2.2s ease-in-out infinite;transform-origin:50% 85%}.teddy.smallbear{width:58px;height:58px;animation-delay:.35s}.teddy.rightbear{width:66px;height:66px;animation-delay:.7s}
+.teddy-heart{position:absolute;color:#ff78c4;font-size:17px;animation:heartBeat 1.5s ease-in-out infinite}
+.teddy-heart.h1{left:18%;top:8px}.teddy-heart.h2{right:18%;top:14px;animation-delay:.4s}.teddy-heart.h3{left:31%;bottom:7px;font-size:13px;animation-delay:.8s}
+@keyframes teddyBob{0%,100%{transform:translateY(2px) rotate(-5deg)}50%{transform:translateY(-9px) rotate(5deg)}}
+@keyframes heartBeat{0%,100%{transform:scale(.8);opacity:.65}50%{transform:scale(1.25);opacity:1}}
+.teddy-card{width:112px;height:112px;object-fit:contain;display:inline-block;border-radius:12px;background:#fff4fb;box-shadow:0 6px 18px #e9008330;animation:teddyBob 2s ease-in-out infinite}
+.teddy-note-art{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto 7px;color:#d9007a}
+.teddy-note-art span{font-size:20px;animation:heartBeat 1.5s infinite}
+.eyebrow{text-align:center;color:#ff91cc;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin:18px 0 8px}.title{font:italic 500 30px 'Playfair Display',serif;text-align:center;margin:0 0 9px}.sub{text-align:center;color:var(--muted);font-size:13px;line-height:1.6;margin:0 auto 22px;max-width:310px}.panel{background:linear-gradient(145deg,rgba(68,18,75,.88),rgba(32,4,42,.94));border:1px solid rgba(255,128,202,.17);border-radius:22px;padding:23px 19px;box-shadow:0 18px 55px #05000880;text-align:center;margin:16px 0}.sticker{font-size:52px;display:block;margin:0 auto 10px;filter:drop-shadow(0 5px 12px #ff168d55)}.question{font:italic 500 23px 'Playfair Display',serif;margin:5px 0 9px}.small{color:var(--muted);font-size:13px;line-height:1.55}.btn{border:0;border-radius:999px;padding:13px 24px;color:white;font-weight:700;font-size:13px;letter-spacing:.2px;background:linear-gradient(100deg,#e90083,#ff43b0);box-shadow:0 7px 22px #f0008750;cursor:pointer;transition:transform .2s,filter .2s;margin-top:15px}.btn:active{transform:scale(.96)}.btn:hover{filter:brightness(1.1)}.hidden{display:none!important}.meter{font:italic 52px 'Playfair Display',serif;margin:7px 0;color:#fff}.track{height:9px;border-radius:20px;background:#4b174d;overflow:hidden;margin:14px 0 5px}.fill{height:100%;width:0;background:linear-gradient(90deg,#ed0088,#ff72c7);border-radius:20px;transition:width 2s ease}.reveal-title{font:italic 21px 'Playfair Display',serif;margin:4px 0 16px}.reveal{padding:16px;border:1px solid #71336d;background:#330b3b;border-radius:15px;margin:10px 0;text-align:left;cursor:pointer;min-height:59px;color:#ff7fc4;font-size:19px;transition:.25s}.reveal span{display:none;color:#ffe8f5;font-size:13px;line-height:1.5}.reveal.open{color:#ff8acb}.reveal.open span{display:block;margin-top:7px}.note{background:#fff0fa;color:#49203e;border-radius:19px;padding:20px 18px;margin-top:16px;box-shadow:0 12px 40px #0006}.note .bear{width:110px;height:110px;object-fit:contain}.note p{font:italic 16px/1.8 'Playfair Display',serif;margin:8px 0}.signature{color:#d9007a;font-weight:700;font-size:13px;margin-top:12px}.footer{text-align:center;color:#94678f;font-size:11px;margin-top:25px}.pop{animation:pop .45s ease}@keyframes pop{0%{transform:scale(.88);opacity:0}100%{transform:scale(1);opacity:1}}
+@media(min-width:600px){main{padding-top:18px}}
+
+/* First kitty uses its own PNG artwork with a gentle floating animation */
+.first-kitty { animation: firstKittyFloat 2.2s ease-in-out infinite; transform-origin: 50% 85%; }
+@keyframes firstKittyFloat {
+  0%, 100% { transform: translateY(0) rotate(-2deg) scale(1); }
+  25% { transform: translateY(-7px) rotate(2deg) scale(1.015); }
+  50% { transform: translateY(-3px) rotate(-1deg) scale(1.025); }
+  75% { transform: translateY(-8px) rotate(1deg) scale(1.01); }
+}
+</style></head>
+<body><div id="stars"></div><div class="hearts" id="hearts"></div>
+<main>
+ <div class="teddy-stage" aria-label="Two different cute kitty animations"><img class="teddy smallbear first-kitty" src="assets/first-kitty.png" alt="First cute kitty animation"><img class="teddy second-kitty" src="assets/sorry-kitty.gif" alt="Second crying kitty animation"><img class="teddy rightbear first-kitty" src="assets/first-kitty.png" alt="First cute kitty animation"><span class="teddy-heart h1">♥</span><span class="teddy-heart h2">♥</span><span class="teddy-heart h3">♡</span></div>
+ <div class="eyebrow">a tiny surprise, made with love</div>
+ <section id="welcome" class="panel pop"><img class="sticker teddy-card first-kitty" src="assets/first-kitty.png" alt="Cute first kitty"><h1 class="title">Hey Wiifu Babu, cutiepie</h1><p class="sub">Do you even know how cute you are? There's only one way to find out…</p><button class="btn" onclick="startCheck()">Let's check 🥺💗</button></section>
+ <section id="meter" class="panel hidden"><div class="small">Measuring your cuteness… ⏳</div><div class="meter" id="percent">0%</div><div class="track"><div class="fill" id="fill"></div></div><p class="small" id="meterline">Please wait, this is serious science.</p></section>
+ <section id="reasons" class="panel hidden"><div class="teddy-note-art"><span>♥</span><img class="teddy-card" style="width:82px;height:82px" src="assets/sorry-kitty.gif" alt="Animated sorry kitty"><span>♥</span></div><h2 class="reveal-title">Tap each one to reveal</h2>
+  <div class="reveal" onclick="reveal(this)">❤️ <span>I messed up… and I'm really sorry for that. 🥺💗</span></div>
+  <div class="reveal" onclick="reveal(this)">❤️ <span>I promise I'll try to be better, listen more, and understand you.</span></div>
+  <div class="reveal" onclick="reveal(this)">❤️ <span>Please forgive me… You mean so much to me, more than words can say. 🥹</span></div>
+  <button class="btn" onclick="showNote()">See more →</button>
+ </section>
+ <section id="final" class="panel hidden"><div class="small" style="font:italic 20px 'Playfair Display',serif">A little note for you</div><div class="note"><div class="teddy-note-art"><span>♥</span><img class="teddy-card" src="assets/sorry-kitty.gif" alt="Animated sorry kitty"><span>♥</span></div><p>I'm really sorry, my love. I never meant to hurt you. You're one of the most precious and adorable people in my life — and I hope you always remember that. 🥺</p><p>Please forgive me if I hurt you or made you feel unwanted. I promise I'll try harder, care better, and never take your smile for granted. 💗</p><div class="signature">With all my love,<br>Gonu Bacha 💕</div></div><button class="btn" onclick="makeCard()">Send a little hug 🤗</button><p id="hug" class="small hidden">A big warm hug is on its way! 💗💗💗</p></section>
+ <div class="footer">made with a little love & lots of pink hearts ✨</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);function show(id){$(id).classList.remove('hidden');$(id).classList.add('pop')}
+function startCheck(){$('welcome').classList.add('hidden');show('meter');let p=0;const timer=setInterval(()=>{p+=5;if(p>100)p=100;$('percent').textContent=p+'%';$('fill').style.width=p+'%';if(p===100){clearInterval(timer);$('meterline').textContent='Result: dangerously, unbelievably cute. 💗';setTimeout(()=>{ $('meter').classList.add('hidden');show('reasons')},900)}},90)}
+function reveal(el){el.classList.toggle('open');if(el.classList.contains('open')){el.style.borderColor='#ff4cac';floatHearts(3)}}
+function showNote(){$('reasons').classList.add('hidden');show('final');floatHearts(15)}function makeCard(){$('hug').classList.remove('hidden');floatHearts(24)}
+function floatHearts(n=1){for(let i=0;i<n;i++){let h=document.createElement('div');h.className='heart';h.textContent=['♥','💗','💕','♡'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'%';h.style.fontSize=(14+Math.random()*22)+'px';h.style.animationDuration=(4+Math.random()*4)+'s';$('hearts').appendChild(h);setTimeout(()=>h.remove(),8500)}}
+for(let i=0;i<55;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*4+'s';$('stars').appendChild(s)}setInterval(()=>floatHearts(1),950);
+</script></body></html>
